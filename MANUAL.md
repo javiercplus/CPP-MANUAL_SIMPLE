@@ -5,8 +5,6 @@
 2. **Sensible a mayusculas**: `cout` no es lo mismo que `Cout`. C++ distingue entre mayusculas y minusculas.
 3. **Las llaves {}**: Sirven para agrupar bloques de codigo (como el cuerpo de una funcion o un bucle).
 
----
-
 ## 1. La Estructura Basica (El Esqueleto)
 Todo programa en C++ tiene una estructura minima. En 2026, la forma moderna de imprimir texto ya no es solo con `cout`, sino usando la libreria `<print>` (estandarizada en C++23), que es mas rapida y legible.
 
@@ -27,7 +25,6 @@ int main() {
 }
 ```
 
----
 
 ## 2. Variables y Tipos de Datos
 Las variables son "cajas" en la memoria para guardar informacion. En C++ debes decir que tipo de dato guardaras, aunque el C++ moderno introduce `auto` para deducir el tipo automaticamente.
@@ -44,8 +41,6 @@ auto salario = 3500.50;  // El compilador sabe que es 'double'
 auto equipo = "Real Madrid"; // El compilador sabe que es 'string'
 ```
 
----
-
 ## 3. Interaccion: Leer y Escribir
 Hoy en dia usamos `print` y `println` para mostrar datos (usando llaves `{}` para insertar variables, similar a Python o C#), y `cin` para leer lo que escribe el usuario.
 
@@ -57,8 +52,6 @@ cin >> edad; // El programa se pausa y espera a que el usuario escriba y presion
 // println con formateo moderno usando {}
 println("Tienes {} anios.", edad); 
 ```
-
----
 
 ## 4. Tomando Decisiones (if, else if, else)
 Sirve para que el programa tome caminos distintos segun una condicion.
@@ -69,7 +62,7 @@ int edad = 17;
 if (edad >= 18) {
     println("Puedes entrar al concierto.");
 } # Manual Esencial de C++ (Edicion 2026)
-
+```
 
 ## Reglas de Oro antes de empezar
 
@@ -79,8 +72,6 @@ if (edad >= 18) {
 
 3. **Las llaves {}**: Sirven para agrupar bloques de codigo (como el cuerpo de una funcion o un bucle).
 
-
----
 
 
 ## 1. La Estructura Basica (El Esqueleto)
@@ -117,11 +108,6 @@ int main() {
 }
 
 ```
-
-
----
-
-
 ## 2. Variables y Tipos de Datos
 
 Las variables son "cajas" en la memoria para guardar informacion. En C++ debes decir que tipo de dato guardaras, aunque el C++ moderno introduce `auto` para deducir el tipo automaticamente.
@@ -149,7 +135,7 @@ auto equipo = "Real Madrid"; // El compilador sabe que es 'string'
 ```
 
 
----
+    
 
 
 ## 3. Interaccion: Leer y Escribir
@@ -171,10 +157,6 @@ cin >> edad; // El programa se pausa y espera a que el usuario escriba y presion
 println("Tienes {} anios.", edad); 
 
 ```
-
-
----
-
 
 ## 4. Tomando Decisiones (if, else if, else)
 
@@ -207,10 +189,6 @@ else {
 ```
 
 *Nota: Para comparar si dos cosas son iguales, se usa doble igual `==`. Un solo igual `=` es para asignar valores.*
-
-
----
-
 
 ## 5. Bucles: Repetir cosas (for y while)
 
@@ -261,10 +239,6 @@ while (vidas > 0) {
 
 ```
 
-
----
-
-
 ## 6. Funciones: Codigo Reutilizable
 
 En lugar de copiar y pegar codigo, lo metes en una "funcion" y la llamas cuando la necesites.
@@ -311,13 +285,12 @@ int main() {
 ```
 
 
----
+    
 
 
 ## 7. Almacenamiento Multiple (Vectores)
 
 En C++ moderno, usamos **Vectores** (`vector`) en lugar de los arreglos tradicionales, porque pueden cambiar de tamano dinamicamente y son mas seguros.
-
 
 ```cpp
 
@@ -361,7 +334,7 @@ int main() {
 ```
 
 
----
+    
 
 
 ## 8. El "Sabor" C++: Referencias y Punteros
@@ -396,7 +369,7 @@ println("Valor: {}", *ptrX);  // Imprime 20 (* significa "ve el valor que hay en
 *¿Para que sirven? Para pasar variables a funciones sin copiarlas (ahorrando memoria) y para crear estructuras de datos complejas.*
 
 
----
+    
 
 
 ## 9. Introduccion a la Programacion Orientada a Objetos (Clases)
@@ -452,7 +425,7 @@ int main() {
 ```
 
 
----
+    
 
 
 ## ¿Como compilar y ejecutar tu codigo en 2026?
@@ -482,7 +455,7 @@ else {
 ```
 *Nota: Para comparar si dos cosas son iguales, se usa doble igual `==`. Un solo igual `=` es para asignar valores.*
 
----
+    
 
 ## 5. Bucles: Repetir cosas (for y while)
 ### El bucle for
@@ -511,7 +484,7 @@ while (vidas > 0) {
 }
 ```
 
----
+    
 
 ## 6. Funciones: Codigo Reutilizable
 En lugar de copiar y pegar codigo, lo metes en una "funcion" y la llamas cuando la necesites.
@@ -538,7 +511,7 @@ int main() {
 }
 ```
 
----
+    
 
 ## 7. Almacenamiento Multiple (Vectores)
 En C++ moderno, usamos **Vectores** (`vector`) en lugar de los arreglos tradicionales, porque pueden cambiar de tamano dinamicamente y son mas seguros.
@@ -565,7 +538,7 @@ int main() {
 }
 ```
 
----
+    
 
 ## 8. El "Sabor" C++: Referencias y Punteros
 Esta es la parte que hace a C++ unico y extremadamente rapido. 
@@ -585,7 +558,7 @@ println("Valor: {}", *ptrX);  // Imprime 20 (* significa "ve el valor que hay en
 ```
 *¿Para que sirven? Para pasar variables a funciones sin copiarlas (ahorrando memoria) y para crear estructuras de datos complejas.*
 
----
+    
 
 ## 9. Introduccion a la Programacion Orientada a Objetos (Clases)
 C++ permite crear tus propios tipos de datos usando **Clases** (plantillas para crear objetos).
@@ -615,7 +588,7 @@ int main() {
 }
 ```
 
----
+    
 
 ## ¿Como compilar y ejecutar tu codigo?
 C++ no se ejecuta solo, necesita ser "traducido" a lenguaje maquina por un compilador (como `g++` o `clang++`). Para usar las caracteristicas modernas vistas en este manual (como `<print>`), debes indicarle al compilador que use el estandar C++23.
