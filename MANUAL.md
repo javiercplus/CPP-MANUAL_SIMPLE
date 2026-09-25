@@ -617,7 +617,7 @@ int main() {
 
 ---
 
-## ¿Como compilar y ejecutar tu codigo en 2026?
+## ¿Como compilar y ejecutar tu codigo?
 C++ no se ejecuta solo, necesita ser "traducido" a lenguaje maquina por un compilador (como `g++` o `clang++`). Para usar las caracteristicas modernas vistas en este manual (como `<print>`), debes indicarle al compilador que use el estandar C++23.
 
 Si usas la terminal de Linux/Mac o WSL en Windows:
